@@ -6,28 +6,32 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --toastify-color-dark: #202020;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
+html,
 body {
-  color: rgb(var(--foreground-rgb));
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 172, 255);
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    103deg,
+    rgb(78, 65, 50) 30%,
+    rgb(255, 187, 0) 50%,
+    rgb(78, 65, 50) 70%
+  );
+  color: rgb(255, 255, 255);
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+/* rgba(0, 172, 255, 1) 20%,
+  rgba(255, 220, 79, 1) 50%,
+  rgba(0, 159, 255, 1) 80% */
