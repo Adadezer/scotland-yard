@@ -3,14 +3,14 @@ import Clue from "./components/Clue";
 
 export default function Home() {
   return (
-    <div className="container mx-auto flex flex-col p-2">
+    <div className="flex flex-col p-2">
       <div className="flex justify-center text-3xl font-semibold mb-5">
         Caderneta Sherlock Holmes
       </div>
       <label className="form-control">
         <div className="text-xl mb-1">Anotações Gerais</div>
         <textarea
-          className="textarea textarea-bordered w-full h-32 bg-white bg-opacity-25 text-lg"
+          className="textarea textarea-bordered w-full h-32 bg-white bg-opacity-20 text-lg"
           placeholder="Escreva suas anotações gerais..."
         ></textarea>
       </label>
@@ -27,6 +27,26 @@ export default function Home() {
         <div className="flex gap-4 text-lg">
           <Clue clue="Banco" />
           <Clue clue="Teatro" />
+        </div>
+        <div className="flex gap-4 text-lg">
+          <Clue clue="Docas" />
+          <Clue clue="Bar" />
+        </div>
+        <div className="flex gap-4 text-lg">
+          <Clue clue="Hotel" />
+          <Clue clue="Livraria" />
+        </div>
+        <div className="flex gap-4 text-lg">
+          <Clue clue="Chaveiro" />
+          <Clue clue="Penhores" />
+        </div>
+        <div className="flex gap-4 text-lg">
+          <Clue clue="Museu" />
+          <Clue clue="Carruagens" />
+        </div>
+        <div className="flex gap-4 text-lg">
+          <Clue clue="Charutaria" />
+          <Clue clue="Scotland Yard" />
         </div>
       </div>
     </div>
