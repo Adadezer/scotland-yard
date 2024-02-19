@@ -11,7 +11,7 @@ function Clue({ clue }: LocalClueProps) {
         <h3>{clue}</h3>
       </div>
       <textarea
-        className="textarea textarea-bordered h-32 w-full bg-white bg-opacity-35 text-lg"
+        className="textarea textarea-bordered h-32 w-full bg-white bg-opacity-20 text-lg"
         placeholder="Anote as pistas encontradas"
       ></textarea>
     </div>
