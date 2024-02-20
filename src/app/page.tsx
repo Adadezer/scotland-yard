@@ -1,7 +1,17 @@
 import Image from "next/image";
-import LocalClue from "./components/LocalClue";
+import ClueSet from "./components/ClueSet";
 
 export default function Home() {
+  const arrayOflocalsClues = [
+    ["Farmácia", "Parque"],
+    ["Banco", "Teatro"],
+    ["Docas", "Bar"],
+    ["Hotel", "Livraria"],
+    ["Chaveiro", "Penhores"],
+    ["Museu", "Carruagens"],
+    ["Charutaria", "Scotland Yard"],
+  ];
+
   return (
     <div className="flex flex-col p-2">
       <div className="flex justify-center text-3xl font-semibold mb-5">
@@ -19,36 +29,9 @@ export default function Home() {
         Pistas
       </div>
 
-      <div className="flex flex-col gap-2">
-        <div className="flex gap-4 text-lg">
-          <LocalClue localClue="Farmácia" />
-          <LocalClue localClue="Parque" />
-        </div>
-        <div className="flex gap-4 text-lg">
-          <LocalClue localClue="Banco" />
-          <LocalClue localClue="Teatro" />
-        </div>
-        <div className="flex gap-4 text-lg">
-          <LocalClue localClue="Docas" />
-          <LocalClue localClue="Bar" />
-        </div>
-        <div className="flex gap-4 text-lg">
-          <LocalClue localClue="Hotel" />
-          <LocalClue localClue="Livraria" />
-        </div>
-        <div className="flex gap-4 text-lg">
-          <LocalClue localClue="Chaveiro" />
-          <LocalClue localClue="Penhores" />
-        </div>
-        <div className="flex gap-4 text-lg">
-          <LocalClue localClue="Museu" />
-          <LocalClue localClue="Carruagens" />
-        </div>
-        <div className="flex gap-4 text-lg">
-          <LocalClue localClue="Charutaria" />
-          <LocalClue localClue="Scotland Yard" />
-        </div>
-      </div>
+      {arrayOflocalsClues.map((arraylocals, index) => (
+        <ClueSet key={index} arraylocals={arraylocals} />
+      ))}
     </div>
   );
 }
