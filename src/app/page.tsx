@@ -24,13 +24,10 @@ export default function Home() {
       </div>
       <label className="form-control">
         <div className="text-xl mb-1">Anotações Gerais</div>
-        <textarea
-          className="textarea textarea-bordered w-full h-32 bg-white bg-opacity-20 text-lg"
-          placeholder="Escreva suas anotações gerais..."
-        ></textarea>
+        <textarea className="textarea textarea-bordered w-full h-32 bg-white bg-opacity-20 text-lg"></textarea>
       </label>
 
-      <div className="flex justify-center text-2xl font-semibold rounded-md bg-yellow-500 bg-opacity-35 border border-amber-950 mt-5 mb-3">
+      <div className="flex justify-center text-2xl font-semibold rounded-md bg-[#fcac00] bg-opacity-75 border border-amber-950 mt-5 mb-3">
         Pistas
       </div>
 
@@ -38,7 +35,7 @@ export default function Home() {
         <NotesSet key={index} arrayNotes={arraylocals} />
       ))}
 
-      <div className="flex justify-center text-2xl font-semibold rounded-md bg-yellow-500 bg-opacity-35 border border-amber-950 mt-10 mb-3">
+      <div className="flex justify-center text-2xl font-semibold rounded-md bg-[#fcac00] bg-opacity-75 border border-amber-950 mt-10 mb-3">
         Soluções
       </div>
 
