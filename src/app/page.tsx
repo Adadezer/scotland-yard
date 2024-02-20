@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Clue from "./components/Clue";
+import LocalClue from "./components/LocalClue";
 
 export default function Home() {
   return (
@@ -21,32 +21,32 @@ export default function Home() {
 
       <div className="flex flex-col gap-2">
         <div className="flex gap-4 text-lg">
-          <Clue clue="Farmácia" />
-          <Clue clue="Parque" />
+          <LocalClue localClue="Farmácia" />
+          <LocalClue localClue="Parque" />
         </div>
         <div className="flex gap-4 text-lg">
-          <Clue clue="Banco" />
-          <Clue clue="Teatro" />
+          <LocalClue localClue="Banco" />
+          <LocalClue localClue="Teatro" />
         </div>
         <div className="flex gap-4 text-lg">
-          <Clue clue="Docas" />
-          <Clue clue="Bar" />
+          <LocalClue localClue="Docas" />
+          <LocalClue localClue="Bar" />
         </div>
         <div className="flex gap-4 text-lg">
-          <Clue clue="Hotel" />
-          <Clue clue="Livraria" />
+          <LocalClue localClue="Hotel" />
+          <LocalClue localClue="Livraria" />
         </div>
         <div className="flex gap-4 text-lg">
-          <Clue clue="Chaveiro" />
-          <Clue clue="Penhores" />
+          <LocalClue localClue="Chaveiro" />
+          <LocalClue localClue="Penhores" />
         </div>
         <div className="flex gap-4 text-lg">
-          <Clue clue="Museu" />
-          <Clue clue="Carruagens" />
+          <LocalClue localClue="Museu" />
+          <LocalClue localClue="Carruagens" />
         </div>
         <div className="flex gap-4 text-lg">
-          <Clue clue="Charutaria" />
-          <Clue clue="Scotland Yard" />
+          <LocalClue localClue="Charutaria" />
+          <LocalClue localClue="Scotland Yard" />
         </div>
       </div>
     </div>
