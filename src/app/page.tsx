@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ClueSet from "./components/ClueSet";
+import NotesSet from "./components/NotesSet";
 
 export default function Home() {
   const arrayOflocalsClues = [
@@ -10,6 +10,11 @@ export default function Home() {
     ["Chaveiro", "Penhores"],
     ["Museu", "Carruagens"],
     ["Charutaria", "Scotland Yard"],
+  ];
+
+  const arrayOfsolucions = [
+    ["A", "B", "C"],
+    ["D", "E", "F"],
   ];
 
   return (
@@ -30,7 +35,15 @@ export default function Home() {
       </div>
 
       {arrayOflocalsClues.map((arraylocals, index) => (
-        <ClueSet key={index} arraylocals={arraylocals} />
+        <NotesSet key={index} arrayNotes={arraylocals} />
+      ))}
+
+      <div className="flex justify-center text-2xl font-semibold rounded-md bg-yellow-500 bg-opacity-35 border border-amber-950 mt-10 mb-3">
+        Soluções
+      </div>
+
+      {arrayOfsolucions.map((arraysolucions, index) => (
+        <NotesSet key={index} arrayNotes={arraysolucions} />
       ))}
     </div>
   );
