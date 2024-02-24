@@ -21,10 +21,9 @@ html,
 body {
   background-image: linear-gradient(
     -225deg,
-    #fcac00 0%,
-    #006fca 20%,
-    #006fca 80%,
-    #fcac00 100%
+    #006fca 0%,
+    #57baf3 50%,
+    #006fca 100%
   );
   color: rgb(255, 255, 255);
 }
