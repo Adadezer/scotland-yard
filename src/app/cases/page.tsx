@@ -7,7 +7,7 @@ import listCases from "@/helpers/listCases";
 function Cases() {
   return (
     <div className="flex flex-col h-screen justify-center items-center gap-3 bg-gradient-to-br from-[#006fca] via-[#399ef1] to-[#006fca] text-white">
-      <div className="flex text-2xl mb-4 items-center font-semibold">
+      <div className="flex text-2xl text-center mb-4 font-semibold">
         Escolha um caso para ser resolvido!
       </div>
       {listCases.map((cases) => (

@@ -20,7 +20,7 @@ function NotebookNotesPage() {
   return (
     <div className="bg-gradient-to-br from-[#006fca] via-[#4da8f3] to-[#006fca] text-white min-h-screen px-4 py-2">
       <div className="flex flex-col p-2">
-        <div className="flex justify-center text-3xl font-bold mb-5">
+        <div className="flex text-center text-3xl font-bold mb-5">
           Caderneta Sherlock Holmes
         </div>
         <label className="form-control font-medium">
