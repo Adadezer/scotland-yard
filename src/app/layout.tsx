@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Advent_Pro } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
 
 const advent = Advent_Pro({
   subsets: ["latin"],
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={advent.className}>{children}</body>
+      <body className={advent.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
